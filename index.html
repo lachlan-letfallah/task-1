@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 3 Movies - Movie Database</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Top 3 Movies</h1>
-        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -20,46 +20,53 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero">
         <h2>Welcome to the Movie Database</h2>
         <p>Discover the top 3 movies to watch right now!</p>
     </section>
 
-    <!-- Movies Section -->
     <section id="movies">
         <h2>Our Top 3 Movies</h2>
         <div class="movie-list">
-            <!-- Movie 1 -->
             <div class="movie">
-                <img src="movie1.jpg" alt="Movie 1 Poster">
-                <h3>Mincraft movie</h3>
-                <p><strong>Synopsis:</strong> This is a short description of the first movie.</p>
+                <img src="movie1.jpg" alt="Minecraft Movie Poster">
+                <h3>Minecraft Movie</h3>
                 <p><strong>IMDB Rating:</strong> 8.5/10</p>
-                <a href="https://www.imdb.com/title/tt1234567/" target="_blank">Watch Trailer</a>
+                <a href="#info1"><button>More Info</button></a>
             </div>
-            
-            <!-- Movie 2 -->
             <div class="movie">
-                <img src="movie2.jpg" alt="Movie 2 Poster">
-                <h3>sharknado</h3>
-                <p><strong>Synopsis:</strong> This is a short description of the second movie.</p>
+                <img src="movie2.jpg" alt="Sharknado Poster">
+                <h3>Sharknado</h3>
                 <p><strong>IMDB Rating:</strong> 3.3/10</p>
-                <a href="https://www.imdb.com/title/tt2345678/" target="_blank">Watch Trailer</a>
+                <a href="#info2"><button>More Info</button></a>
             </div>
-            
-            <!-- Movie 3 -->
             <div class="movie">
-                <img src="movie3.jpg" alt="Movie 3 Poster">
-                <h3>velocipaster</h3>
-                <p><strong>Synopsis:</strong> This is a short description of the third movie.</p>
+                <img src="movie3.jpg" alt="VelociPastor Poster">
+                <h3>VelociPastor</h3>
                 <p><strong>IMDB Rating:</strong> 5.1/10</p>
-                <a href="https://www.imdb.com/title/tt3456789/" target="_blank">Watch Trailer</a>
+                <a href="#info3"><button>More Info</button></a>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <section id="about">
+        <h2>About This Database</h2>
+        <p>This movie database provides information about the top movies, including ratings, descriptions, and trailers.</p>
+    </section>
+
+    <section id="info1">
+        <h2>Minecraft Movie Details</h2>
+        <p>A Minecraft Movie follows four misfits pulled into the Overworld, a bizarre, cubic wonderland, where they must master this world and embark on a quest with an expert crafter, Steve (played by Jack Black), to return home and save the Overworld from the Nether.</p>
+    </section>
+    <section id="info2">
+        <h2>Sharknado Details</h2>
+        <p>Sharknado is a series of Syfy Channel films that satirically depict a natural disaster where sharks are lifted into the air by tornadoes and unleashed upon unsuspecting land-based populations, often resulting in chaos and carnage.</p>
+    </section>
+    <section id="info3">
+        <h2>VelociPastor Details</h2>
+        <p>This is a detailed description of VelociPastor.</p>
+    </section>
+
     <footer>
         <p>&copy; 2025 Movie Database</p>
     </footer>
