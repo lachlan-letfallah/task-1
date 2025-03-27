@@ -6,19 +6,54 @@
     <title>Top 3 Movies - Movie Database</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <style>
+        /* Make the nav bar fixed and follow the page */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Add padding to body to prevent content from being hidden under fixed nav */
+        body {
+            padding-top: 60px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Top 3 Movies</h1>
-        <nav>
+        <nav id="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#movies">Movies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <section id="top"></section>
 
     <section id="hero">
         <h2>Welcome to the Movie Database</h2>
@@ -56,15 +91,15 @@
 
     <section id="info1">
         <h2>Minecraft Movie Details</h2>
-        <p>A Minecraft Movie follows four misfits pulled into the Overworld, a bizarre, cubic wonderland, where they must master this world and embark on a quest with an expert crafter, Steve (played by Jack Black), to return home and save the Overworld from the Nether.</p>
+        <p>This is a detailed description of the Minecraft Movie.</p>
     </section>
     <section id="info2">
         <h2>Sharknado Details</h2>
-        <p>Sharknado is a series of Syfy Channel films that satirically depict a natural disaster where sharks are lifted into the air by tornadoes and unleashed upon unsuspecting land-based populations, often resulting in chaos and carnage.</p>
+        <p>This is a detailed description of Sharknado.</p>
     </section>
     <section id="info3">
         <h2>VelociPastor Details</h2>
-        <p>The VelociPastor is a 2018 action, adventure, and comedy film about a priest who, after losing his parents, inherits the ability to turn into a dinosaur and, with the help of a prostitute, uses his newfound power to fight crime and ninjas.</p>
+        <p>This is a detailed description of VelociPastor.</p>
     </section>
 
     <footer>
