@@ -1,0 +1,39 @@
+        /* Make the nav bar fixed and follow the page */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Add padding to body to prevent content from being hidden under fixed nav */
+        body {
+            padding-top: 60px;
+        }
+
+        img {
+            width: 300px; /* Set a fixed width for all images */
+            height: 450px; /* Set a fixed height for all images */
+            object-fit: cover; /* Ensures images maintain aspect ratio and fill the dimensions */
+            border-radius: 10px; /* Optional: Adds rounded corners for better aesthetics */
+        }
+        
