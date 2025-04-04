@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 3 Movies - Movie Database</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        .movie img {
+            max-width: 100%; /* Ensures the image fits within its container */
+            height: auto;    /* Maintains the aspect ratio */
+            object-fit: cover; /* Optional: fills the container, cropping if necessary */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,7 +45,7 @@
                 <a href="#info1"><button>More Info</button></a>
             </div>
             <div class="movie">
-                <img src="assets/sharknado.jpg" alt="Sharknado Poster">
+                <img src="assets/sharknado.jpg" alt="Sharknado Poster" >
                 <h3>Sharknado</h3>
                 <p><strong>info:</strong>A tornado floods Los Angeles, leading sharks</p>
                 <p><strong>IMDB Rating:</strong> 3.3/10</p>
